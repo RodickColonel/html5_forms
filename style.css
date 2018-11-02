@@ -27,7 +27,7 @@ label {
 	background-color:#fff27d;
 }
 
-[type=text], [type=email], [type=file], .datalist, [type=date] {
+[type=text], [type=email], [type=file], .datalist, [type=date], [type=datetime-local] {
 	width:98%;
 	font-size:1.1em;
 	border:2px solid #717171;

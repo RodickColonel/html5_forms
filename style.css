@@ -18,16 +18,22 @@ label {
 	display:block;
 	font-size:1.1em;
 	margin-left:4px;
-	margin-bottom:2px;
+	margin:5px 1px 1px 4px;
 	font-family:"Lucida Console", Monaco, monospace;	
-	color:#6c6c6c	
+	color:#6c6c6c;
 }
 
-[type=text]::selection, [type=email]::selection {
+[type=text]::selection, [type=email]::selection, [type=file]::selection, .datalist::selection, 
+[type=date]::selection, [type=datetime-local]::selection,[type=month]::selection, 
+[type=number]::selection, [type=password]::selection, [type=range]::selection, 
+[type=search]::selection, [type=tel]::selection, [type=time]::selection, [type=url]::selection,
+[type=week]::selection, select::selection {
 	background-color:#fff27d;
 }
 
-[type=text], [type=email], [type=file], .datalist, [type=date], [type=datetime-local] {
+[type=text], [type=email], [type=file], .datalist, [type=date], [type=datetime-local],
+[type=month], [type=number], [type=password], [type=range], [type=search], [type=tel],
+[type=time], [type=url], [type=week], select {
 	width:98%;
 	font-size:1.1em;
 	border:2px solid #717171;
@@ -46,11 +52,18 @@ label {
 	margin-bottom:10px;
 	height:30px;
 }
+[type=checkbox], [type=radio] {
+	font-size:1.2em;
+	-ms-transform: scale(1.4); /* IE */
+     -moz-transform: scale(1.4); /* FF */
+     -webkit-transform: scale(1.4); /* Safari and Chrome */
+     -o-transform: scale(1.4); /* Opera */
+     margin:0 12px 18px 0;
+}
 
-
-[type=submit] {
+[type=submit], button {
 	font-size:1.1em;
-	margin:5px;
+	margin:20px 3px 0 5px;
 	border:8px solid #1da1ff;
 	background-color:#1da1ff;
 	font-family:"Arial Black", Gadget, sans-serif;	
@@ -58,6 +71,20 @@ label {
 	border-radius:10px;
 	box-shadow:2px 2px 3px #979090;
 }
+[type=image] {
+	margin:20px 3px 0 5px;
+}
+[type=reset] {
+	font-size:1.1em;
+	margin:5px;
+	border:8px solid #af3757;
+	background-color:#af3757;
+	font-family:"Arial Black", Gadget, sans-serif;	
+	opacity:0.6;
+	border-radius:10px;
+	box-shadow:2px 2px 3px #979090;
+}
+
 
 fieldset {
 	padding:8%;
@@ -68,4 +95,19 @@ legend {
 	font-size:1.2em;
 	margin:10px;
 }
+.left {
+	float:left;
+	min-width:140px;
+	margin-left:0;
+}
+.right {
+	float:right;
+	min-width:140px;
+	margin:0;
+}
+.clear {
+	clear:both;
+}
+
+
 

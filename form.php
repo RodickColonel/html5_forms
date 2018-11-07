@@ -141,12 +141,12 @@ aria-label="Search through site content" required>
  <fieldset>
   <legend>Radio boxes</legend>
       <div class="left">
-      <label><input type="radio" name="jurney" value="bus">By bus</label>
-      <label><input type="radio" name="jurney" value="car">By car</label>
+      <label><input type="radio" name="journey" value="bus">By bus</label>
+      <label><input type="radio" name="journey" value="car">By car</label>
       </div>
       <div class="left">
-      <label><input type="radio" name="jurney" value="bicycle">By bicycle</label>
-      <label><input type="radio" name="jurney" value="foot">By foot</label>
+      <label><input type="radio" name="journey" value="bicycle">By bicycle</label>
+      <label><input type="radio" name="journey" value="foot">By foot</label>
       </div>
       <div class="clear"></div>
       <input type="submit" value="Submit">    
